@@ -35,7 +35,8 @@ jobs:
         run: npm run prepare:runtime && npm run verify:runtime
 
       - name: Test engine
-      continue-on-error: true
+
+        continue-on-error: true
         run: npm test
 
       - name: Audit source
